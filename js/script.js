@@ -156,3 +156,59 @@ document.getElementById('call-btn-9')
             alert('Calling Bangladesh Railway 163')
         }
     })
+
+// call button function ended 
+// ---------------------------------------------------------------------
+
+// copy button function 
+function copyButton(id) {
+    const copyAmountNumber = parseInt(document.getElementById('nav-copy-btn').innerText)
+    const newAmount = copyAmountNumber + 1;
+    document.getElementById('nav-copy-btn').innerText = newAmount
+}
+
+// 1 
+document.getElementById('copy-btn-1')
+    .addEventListener('click', function () {
+        copyButton('copy-btn-1')
+    })
+// 2
+document.getElementById('copy-btn-2')
+    .addEventListener('click', function () {
+        copyButton('copy-btn-2')
+    })
+// 3
+document.getElementById('copy-btn-3')
+    .addEventListener('click', function () {
+        copyButton('copy-btn-3')
+    })
+// 4
+document.getElementById('copy-btn-4')
+    .addEventListener('click', function () {
+        copyButton('copy-btn-4')
+    })
+// 5
+document.getElementById('copy-btn-5')
+    .addEventListener('click', function () {
+        copyButton('copy-btn-5')
+    })
+// 6
+document.getElementById('copy-btn-6')
+    .addEventListener('click', function () {
+        copyButton('copy-btn-6')
+    })
+// 7
+document.getElementById('copy-btn-7')
+    .addEventListener('click', function () {
+        copyButton('copy-btn-7')
+    })
+// 8
+document.getElementById('copy-btn-8')
+    .addEventListener('click', function () {
+        copyButton('copy-btn-8')
+    })
+// 9
+document.getElementById('copy-btn-9')
+    .addEventListener('click', function () {
+        copyButton('copy-btn-9')
+    })
