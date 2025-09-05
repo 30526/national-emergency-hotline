@@ -12,18 +12,19 @@
 </head>
 
 <body>
-    <header>
-        <div class="nav-bar">
-            <div class="nav-logo-section">
-                <img src="assets/logo.png" alt="National Emergency Service Logo">
-                <h3>Emergency<br>Service</h3>
+    <header class="container mx-auto">
+        <div class="nav-bar flex justify-between items-center">
+            <div class="nav-logo-section flex justify-between items-center">
+                <img class="w-[50px]" src="assets/logo.png" alt="National Emergency Service Logo">
+                <h3 class="font-extrabold text-xl text-[#006747] ml-2">Emergency<br>Service</h3>
             </div>
-            <div class="nav-buttons-section">
-                <div id="heart-counter">
+            <div class="nav-buttons-section flex justify-between items-center">
+                <div id="heart-counter"
+                    class="flex ustify-between items-center border-2 border-red-500 w-[120px] h-[50px] p-5">
                     <h4 id="heart-amount">0</h4>
-                    <img src="assets/heart.png" alt="Heart icon">
+                    <img class="w-6 h-6 ml-2" src="assets/heart.png" alt="Heart icon">
                 </div>
-                <div id="coin-counter">
+                <div id="coin-counter" class="flex ustify-between items-center">
                     <h4 id="coin-amount">100</h4>
                     <img src="assets/coin.png" alt="">
                 </div>
