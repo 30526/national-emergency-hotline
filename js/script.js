@@ -1,4 +1,4 @@
-const history = []
+let history = []
 
 // heart button function 
 
@@ -238,7 +238,7 @@ document.getElementById('call-btn-9')
 // copy button function 
 function copyButton(id) {
     const copyAmountNumber = parseInt(document.getElementById('nav-copy-btn').innerText)
-    alert('Text copied to clipboard!')
+    alert('Number copied to clipboard!')
     const newAmount = copyAmountNumber + 1;
     document.getElementById('nav-copy-btn').innerText = newAmount
 }
@@ -293,6 +293,7 @@ document.getElementById('copy-btn-9')
 // ---------------------------------------------------------------------
 
 
+
 // history button function 
 function historyInfo() {
     const newHistory = document.getElementById('history-data-section')
@@ -312,3 +313,13 @@ function historyInfo() {
 }
 // history button function ended
 // ---------------------------------------------------------------------
+
+// clear history button 
+const historyContainer = document.getElementById('history-data-section')
+document.getElementById('clear-btn')
+    .addEventListener('click', function () {
+        history = []
+       historyContainer.innerHTML = ''
+
+
+    })
