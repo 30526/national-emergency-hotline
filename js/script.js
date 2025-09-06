@@ -242,51 +242,67 @@ function copyButton(id) {
     const newAmount = copyAmountNumber + 1;
     document.getElementById('nav-copy-btn').innerText = newAmount
 }
+// copy to Clipboard function 
+function copy(id) {
+    const copyText = document.getElementById(id).innerText
+    navigator.clipboard.writeText(copyText)
+}
+
 
 // 1 
 document.getElementById('copy-btn-1')
     .addEventListener('click', function () {
         copyButton('copy-btn-1')
+        copy('emergency-number')
     })
 // 2
 document.getElementById('copy-btn-2')
     .addEventListener('click', function () {
         copyButton('copy-btn-2')
+        copy('police-number')
     })
 // 3
 document.getElementById('copy-btn-3')
     .addEventListener('click', function () {
         copyButton('copy-btn-3')
+        copy('fire-service-number')
     })
 // 4
 document.getElementById('copy-btn-4')
     .addEventListener('click', function () {
         copyButton('copy-btn-4')
+        copy('ambulance-number')
     })
 // 5
 document.getElementById('copy-btn-5')
     .addEventListener('click', function () {
         copyButton('copy-btn-5')
+        copy('women-child-help-number')
     })
 // 6
 document.getElementById('copy-btn-6')
     .addEventListener('click', function () {
         copyButton('copy-btn-6')
+        copy('anti-corruption-number')
     })
 // 7
 document.getElementById('copy-btn-7')
     .addEventListener('click', function () {
         copyButton('copy-btn-7')
+        copy('electricity-number')
     })
 // 8
 document.getElementById('copy-btn-8')
     .addEventListener('click', function () {
         copyButton('copy-btn-8')
+        copy('brac-number')
     })
 // 9
 document.getElementById('copy-btn-9')
     .addEventListener('click', function () {
         copyButton('copy-btn-9')
+        copy('railway-number')
+
     })
 
 // copy button function ended
@@ -319,7 +335,7 @@ const historyContainer = document.getElementById('history-data-section')
 document.getElementById('clear-btn')
     .addEventListener('click', function () {
         history = []
-       historyContainer.innerHTML = ''
-
-
+        historyContainer.innerHTML = ''
     })
+// clear history button ended
+// ---------------------------------------------------------------------
