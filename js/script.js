@@ -339,3 +339,42 @@ document.getElementById('clear-btn')
     })
 // clear history button ended
 // ---------------------------------------------------------------------
+
+
+// History toggline for mobile device 
+document.getElementById('see-history')
+    .addEventListener('click', function () {
+        const allCards = document.getElementsByClassName('card')
+        for (const card of allCards) {
+            card.classList.add('hidden', 'md:block')
+        }
+        const historySection = document.getElementById('history-card')
+        historySection.classList.remove('hidden')
+        // history link 
+        const historyLink = document.getElementById('see-history')
+        historyLink.classList.add('hidden')
+        // home link 
+        const returnLink = document.getElementById('return-home')
+        returnLink.classList.remove('hidden')
+    })
+
+
+// home button toggling for mobile device
+document.getElementById('return-home')
+    .addEventListener('click', function () {
+        const allCards = document.getElementsByClassName('card')
+
+        for (const card of allCards) {
+            card.classList.remove('hidden')
+            card.classList.add('block')
+        }
+        const historyCard = document.getElementById('history-card')
+        historyCard.classList.add('hidden')
+        // history link 
+        const historyLink = document.getElementById('see-history')
+        historyLink.classList.remove('hidden')
+        // home link 
+        const returnLink = document.getElementById('return-home')
+        returnLink.classList.add('hidden')
+
+    })

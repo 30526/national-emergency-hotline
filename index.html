@@ -54,8 +54,19 @@
                 People’s Republic of
                 Bangladesh</p>
         </section>
+
         <!-- card sections  -->
         <section id="call-card-section" class="bg-[#F5FFF6] container mx-auto grid md:grid-cols-4 gap-3 p-4">
+            <div id="toggle-div" class=" md:hidden  my-3 px-3">
+                <h4 id="return-home"
+                    class="hover:cursor-pointer hover:text-blue-600 font-medium text-lg  mr-auto hidden"><i
+                        class="fa-solid fa-house"></i> <span class="underline">Home</span></h4>
+                <div class=" text-right">
+                    <h4 id="see-history" class="hover:cursor-pointer hover:text-blue-600 "><i
+                            class="fa-solid fa-clock-rotate-left "></i> <span
+                            class="underline font-medium text-lg">History</span></h4>
+                </div>
+            </div>
             <!-- card 01 -->
             <div class="card bg-white p-5 rounded-2xl shadow-md ">
                 <div class="card-icon flex  justify-between items-center mb-[16px]">
@@ -144,13 +155,14 @@
                 </div>
             </div>
             <!-- card -04 - history card  -->
-            <div class="card bg-white p-5 rounded-2xl shadow-md row-span-3 hidden md:block">
+            <div id="history-card" class=" bg-white p-5 rounded-2xl shadow-md row-span-3 hidden md:block">
                 <div class="flex justify-between items-center mb-3">
                     <div class="flex items-center gap-2">
                         <span><i class="fa-solid fa-clock-rotate-left"></i></span>
                         <h4 class="font-semibold">Call History</h4>
                     </div>
-                    <button id="clear-btn" class="btn bg-[#00A63E] rounded-full text-white hover:bg-[#a8a8a8]">Clear</button>
+                    <button id="clear-btn"
+                        class="btn bg-[#00A63E] rounded-full text-white hover:bg-[#a8a8a8]">Clear</button>
                 </div>
                 <div id="history-data-section">
 
