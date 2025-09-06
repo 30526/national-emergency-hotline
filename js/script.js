@@ -238,6 +238,7 @@ document.getElementById('call-btn-9')
 // copy button function 
 function copyButton(id) {
     const copyAmountNumber = parseInt(document.getElementById('nav-copy-btn').innerText)
+    alert('Text copied to clipboard!')
     const newAmount = copyAmountNumber + 1;
     document.getElementById('nav-copy-btn').innerText = newAmount
 }
