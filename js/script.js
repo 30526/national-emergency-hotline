@@ -76,16 +76,17 @@ document.getElementById('call-btn-1')
         const completed = callButton('call-btn-1')
         if (completed === true) {
             alert('Calling National Emergency 999')
+            // push history data 
+            const historyData = {
+                service: 'জরুরি সেবা',
+                number: 999,
+                time: new Date().toLocaleTimeString()
+            }
+            history.push(historyData)
+            historyInfo()
         }
 
-        // push history data 
-        const historyData = {
-            service: 'জরুরি সেবা',
-            number: 999,
-            time: new Date().toLocaleTimeString()
-        }
-        history.push(historyData)
-        historyInfo()
+
     })
 
 // 2
@@ -95,15 +96,16 @@ document.getElementById('call-btn-2')
         const completed = callButton('call-btn-2')
         if (completed === true) {
             alert('Calling National Police 999')
+            // push history data 
+            const historyData = {
+                service: 'পুলিশ',
+                number: 999,
+                time: new Date().toLocaleTimeString()
+            }
+            history.push(historyData)
+            historyInfo()
         }
-        // push history data 
-        const historyData = {
-            service: 'পুলিশ',
-            number: 999,
-            time: new Date().toLocaleTimeString()
-        }
-        history.push(historyData)
-        historyInfo()
+
     })
 
 // 3
@@ -113,15 +115,16 @@ document.getElementById('call-btn-3')
         const completed = callButton('call-btn-3')
         if (completed === true) {
             alert('Calling Fire Service 999')
+            // push history data 
+            const historyData = {
+                service: 'ফায়ার সার্ভিস',
+                number: 999,
+                time: new Date().toLocaleTimeString()
+            }
+            history.push(historyData)
+            historyInfo()
         }
-        // push history data 
-        const historyData = {
-            service: 'ফায়ার সার্ভিস',
-            number: 999,
-            time: new Date().toLocaleTimeString()
-        }
-        history.push(historyData)
-        historyInfo()
+
     })
 
 // 4
@@ -131,15 +134,15 @@ document.getElementById('call-btn-4')
         const completed = callButton('call-btn-4')
         if (completed === true) {
             alert('Calling Ambulance 1994-999999')
+            // push history data 
+            const historyData = {
+                service: 'অ্যাম্বুলেন্স',
+                number: 1994999999,
+                time: new Date().toLocaleTimeString()
+            }
+            history.push(historyData)
+            historyInfo()
         }
-        // push history data 
-        const historyData = {
-            service: 'অ্যাম্বুলেন্স',
-            number: 1994999999,
-            time: new Date().toLocaleTimeString()
-        }
-        history.push(historyData)
-        historyInfo()
     })
 
 // 5
@@ -149,15 +152,15 @@ document.getElementById('call-btn-5')
         const completed = callButton('call-btn-5')
         if (completed === true) {
             alert('Calling Women & Child Helpline 109')
+            // push history data 
+            const historyData = {
+                service: 'নারী ও শিশু সহায়তা',
+                number: 109,
+                time: new Date().toLocaleTimeString()
+            }
+            history.push(historyData)
+            historyInfo()
         }
-        // push history data 
-        const historyData = {
-            service: 'নারী ও শিশু সহায়তা',
-            number: 109,
-            time: new Date().toLocaleTimeString()
-        }
-        history.push(historyData)
-        historyInfo()
     })
 
 // 6
@@ -167,15 +170,15 @@ document.getElementById('call-btn-6')
         const completed = callButton('call-btn-6')
         if (completed === true) {
             alert('Calling Anti-Corruption 106')
+            // push history data 
+            const historyData = {
+                service: 'দুদক',
+                number: 106,
+                time: new Date().toLocaleTimeString()
+            }
+            history.push(historyData)
+            historyInfo()
         }
-        // push history data 
-        const historyData = {
-            service: 'দুদক',
-            number: 106,
-            time: new Date().toLocaleTimeString()
-        }
-        history.push(historyData)
-        historyInfo()
     })
 
 // 7
@@ -185,15 +188,16 @@ document.getElementById('call-btn-7')
         const completed = callButton('call-btn-7')
         if (completed === true) {
             alert('Calling Electricity Outage 16216')
+            // push history data 
+            const historyData = {
+                service: 'বিদ্যুৎ বিভ্রাট',
+                number: 16216,
+                time: new Date().toLocaleTimeString()
+            }
+            history.push(historyData)
+            historyInfo()
         }
-        // push history data 
-        const historyData = {
-            service: 'বিদ্যুৎ বিভ্রাট',
-            number: 16216,
-            time: new Date().toLocaleTimeString()
-        }
-        history.push(historyData)
-        historyInfo()
+
     })
 
 // 8
@@ -203,15 +207,15 @@ document.getElementById('call-btn-8')
         const completed = callButton('call-btn-8')
         if (completed === true) {
             alert('Calling Brac 16445')
+            // push history data 
+            const historyData = {
+                service: 'ব্র্যাক',
+                number: 16445,
+                time: new Date().toLocaleTimeString()
+            }
+            history.push(historyData)
+            historyInfo()
         }
-        // push history data 
-        const historyData = {
-            service: 'ব্র্যাক',
-            number: 16445,
-            time: new Date().toLocaleTimeString()
-        }
-        history.push(historyData)
-        historyInfo()
     })
 
 // 9
@@ -221,15 +225,15 @@ document.getElementById('call-btn-9')
         const completed = callButton('call-btn-9')
         if (completed === true) {
             alert('Calling Bangladesh Railway 163')
+            // push history data 
+            const historyData = {
+                service: 'বাংলাদেশ রেলওয়ে',
+                number: 163,
+                time: new Date().toLocaleTimeString()
+            }
+            history.push(historyData)
+            historyInfo()
         }
-        // push history data 
-        const historyData = {
-            service: 'বাংলাদেশ রেলওয়ে',
-            number: 163,
-            time: new Date().toLocaleTimeString()
-        }
-        history.push(historyData)
-        historyInfo()
     })
 
 // call button function ended 
@@ -327,6 +331,7 @@ function historyInfo() {
         newHistory.appendChild(newDiv)
     }
 }
+
 // history button function ended
 // ---------------------------------------------------------------------
 
